@@ -8,16 +8,12 @@
 </head>
 <body>
     <div class="container">
-        <!-- Tela visual com aviso se a imagem não carregar -->
+        <!-- Tela onde exibe a imagem atual puxando o nome exato com .jpg.png -->
         <div id="tela-visual">
-            <img id="imagem-etapa" src="passo5.jpg" alt="A imagem passo5.jpg não foi encontrada!" 
-                 onerror="this.style.display='none'; document.getElementById('erro-msg').style.display='block';">
-            <div id="erro-msg" style="color: red; font-weight: bold; font-size: 20px; display: none; text-align: center; padding: 20px;">
-                ERRO: O arquivo "passo5.jpg" não está na mesma pasta ou o nome está diferente no GitHub!
-            </div>
+            <img id="imagem-etapa" src="passo5.jpg.png" alt="Passo Putaway">
         </div>
 
-        <!-- Campo para capturar o leitor -->
+        <!-- Campo para capturar o leitor Honeywell -->
         <div class="input-area">
             <input type="text" id="barcode-input" placeholder="Aguardando leitura..." autofocus autocomplete="off">
         </div>
