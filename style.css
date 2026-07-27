@@ -1,34 +1,57 @@
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #FFE600;
+    padding: 0;
 }
-header {
-    height: 60px;
+
+body {
+    background-color: #ffcc00; /* Fundo amarelo padrão */
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
+    height: 100vh;
+    overflow: hidden;
 }
+
 .container {
-    height: 80vh;
+    width: 100%;
+    max-width: 480px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffcc00;
+}
+
+#tela-visual {
+    width: 100%;
+    flex: 1;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.icone {
-    font-size: 90px;
+
+#imagem-etapa {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Mantém a proporção da imagem sem distorcer */
 }
-h1 {
-    font-size: 35px;
-    text-align: center;
+
+.input-area {
+    width: 100%;
+    padding: 10px 0;
 }
-input {
-    width: 320px;
-    height: 55px;
-    font-size: 22px;
+
+#barcode-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 5px;
     text-align: center;
-    border-radius: 8px;
-    border: none;
+    background-color: #fff;
+    outline: none;
 }
