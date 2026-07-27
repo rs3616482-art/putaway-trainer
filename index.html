@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PutAway Trainer</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento Putaway</title>
+    <!-- Puxando o seu arquivo estilo.css -->
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+    <div class="container">
+        <!-- Tela onde exibe a imagem atual -->
+        <div id="tela-visual">
+            <img id="imagem-etapa" src="passo5.jpg.png" alt="Passo Putaway">
+        </div>
 
-<header>
-  <h2>Put Away</h2>
-</header>
+        <!-- Campo para capturar o leitor Honeywell -->
+        <div class="input-area">
+            <input type="text" id="barcode-input" placeholder="Aguardando leitura..." autofocus autocomplete="off">
+        </div>
+    </div>
 
-<div class="container">
-  <div class="icone">📦</div>
-  <h1>Escaneie a Tote</h1>
-  <input id="scanner" type="text" autofocus placeholder="Aguardando leitura...">
-</div>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
