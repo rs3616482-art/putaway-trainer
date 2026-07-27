@@ -2,18 +2,22 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treinamento Putaway</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <div class="container">
-        <!-- Tela onde exibe a imagem atual -->
+        <!-- Tela visual com aviso se a imagem não carregar -->
         <div id="tela-visual">
-            <img id="imagem-etapa" src="passo5.jpg" alt="Passo Putaway">
+            <img id="imagem-etapa" src="passo5.jpg" alt="A imagem passo5.jpg não foi encontrada!" 
+                 onerror="this.style.display='none'; document.getElementById('erro-msg').style.display='block';">
+            <div id="erro-msg" style="color: red; font-weight: bold; font-size: 20px; display: none; text-align: center; padding: 20px;">
+                ERRO: O arquivo "passo5.jpg" não está na mesma pasta ou o nome está diferente no GitHub!
+            </div>
         </div>
 
-        <!-- Campo para capturar o leitor Honeywell -->
+        <!-- Campo para capturar o leitor -->
         <div class="input-area">
             <input type="text" id="barcode-input" placeholder="Aguardando leitura..." autofocus autocomplete="off">
         </div>
