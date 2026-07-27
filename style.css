@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #ffcc00; /* Fundo amarelo padrão */
+    background-color: #ffcc00;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -22,7 +22,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     background-color: #ffcc00;
 }
 
@@ -32,12 +32,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ffcc00;
 }
 
 #imagem-etapa {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Mantém a proporção da imagem sem distorcer */
+    object-fit: fill;
 }
 
 .input-area {
